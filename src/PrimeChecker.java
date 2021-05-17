@@ -4,6 +4,7 @@ public class PrimeChecker {
 	
 	public static void main(String[] args) {
 		
+		
 	//public void FillArrayLists () {
 		ArrayList<Long> numbers20Bits = new ArrayList<>();
 //		ArrayList<Long> numbers40Bits = new ArrayList<>();
@@ -62,5 +63,15 @@ public class PrimeChecker {
 		if(n<2) return false;
 		
 		return true;
+	}
+	
+	public static void bitCounter(int n) {
+		//return Integer.toBinaryString(n);
+		int b = 0;
+		while (n > 0) {
+		    b++;
+		    n = n >> 1;
+		}
+		System.out.println(b);
 	}
 }
